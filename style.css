@@ -1,0 +1,219 @@
+*{
+
+  margin:0;
+
+  padding:0;
+
+  box-sizing:border-box;
+
+}
+
+body{
+
+  font-family:Arial, sans-serif;
+
+  background:#f5f5f5;
+
+}
+
+.menu{
+
+  background:#0d1b2a;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  flex-wrap:wrap;
+
+  padding:20px 40px;
+
+}
+
+.logo{
+
+  color:white;
+
+  font-size:40px;
+
+  font-weight:bold;
+
+}
+
+nav{
+
+  display:flex;
+
+  gap:30px;
+
+}
+
+nav a{
+
+  color:white;
+
+  text-decoration:none;
+
+  font-size:20px;
+
+  font-weight:bold;
+
+  transition:0.3s;
+
+}
+
+nav a:hover{
+
+  color:#FFD700;                   }                                 .banner{
+
+  background:linear-gradient(135deg,#0d1b2a,#1b263b);
+
+  color:white;
+
+  text-align:center;
+
+  padding:100px 20px;
+
+}
+
+.banner h1{
+
+  font-size:48px;
+
+  margin-bottom:20px;
+
+}
+
+.banner p{
+
+  font-size:20px;
+
+  max-width:700px;
+
+  margin:auto;
+
+  margin-bottom:35px;
+
+}
+
+.botao{
+
+  display:inline-block;
+
+  background:#FFD700;
+
+  color:#000;
+
+  padding:15px 35px;
+
+  border-radius:8px;
+
+  text-decoration:none;
+
+  font-weight:bold;
+
+  transition:0.3s;
+
+}
+
+.botao:hover{
+
+  background:white;
+
+}                                .ebooks{
+
+  padding:70px 20px;
+
+  text-align:center;
+
+}
+
+.ebooks h2{
+
+  font-size:40px;
+
+  margin-bottom:40px;
+
+}
+
+.cards{
+
+  display:flex;
+
+  justify-content:center;
+
+  flex-wrap:wrap;
+
+  gap:30px;
+
+}
+
+.card{
+
+  width:300px;
+
+  background:white;
+
+  border-radius:15px;
+
+  padding:25px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+.card h3{
+
+  margin-bottom:15px;
+
+}
+
+.card p{
+
+  margin-bottom:20px;
+
+}
+
+.card span{
+
+  display:block;
+
+  font-size:24px;
+
+  font-weight:bold;
+
+  color:#0d1b2a;
+
+  margin-bottom:20px;
+
+}
+
+.card button{
+
+  width:100%;
+
+  padding:15px;
+
+  background:#0d1b2a;
+
+  color:white;
+
+  border:none;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+  font-size:18px;
+
+}
+
+.card button:hover{
+
+  background:#FFD700;
+
+  color:black;
+
+} 
