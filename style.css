@@ -1,219 +1,263 @@
-*{
+body {
 
-  margin:0;
+  font-family: Arial, sans-serif;
 
-  padding:0;
+  background: #f5f7fb;
 
-  box-sizing:border-box;
+  margin: 0;
 
-}
-
-body{
-
-  font-family:Arial, sans-serif;
-
-  background:#f5f5f5;
+  padding: 0;
 
 }
 
-.menu{
+.container {
 
-  background:#0d1b2a;
+  max-width: 1100px;
 
-  display:flex;
+  margin: auto;
 
-  justify-content:space-between;
-
-  align-items:center;
-
-  flex-wrap:wrap;
-
-  padding:20px 40px;
+  padding: 20px;
 
 }
 
-.logo{
+header {
 
-  color:white;
+  text-align: center;
 
-  font-size:40px;
+  background: #111827;
 
-  font-weight:bold;
+  color: white;
 
-}
+  padding: 40px 20px;
 
-nav{
-
-  display:flex;
-
-  gap:30px;
+  border-radius: 15px;
 
 }
 
-nav a{
+header h1 {
 
-  color:white;
-
-  text-decoration:none;
-
-  font-size:20px;
-
-  font-weight:bold;
-
-  transition:0.3s;
+  font-size: 38px;
 
 }
 
-nav a:hover{
+.ebooks {
 
-  color:#FFD700;                   }                                 .banner{
+  display: flex;
 
-  background:linear-gradient(135deg,#0d1b2a,#1b263b);
+  gap: 20px;
 
-  color:white;
+  justify-content: center;
 
-  text-align:center;
+  flex-wrap: wrap;
 
-  padding:100px 20px;
-
-}
-
-.banner h1{
-
-  font-size:48px;
-
-  margin-bottom:20px;
+  margin-top: 30px;
 
 }
 
-.banner p{
+.card {
 
-  font-size:20px;
+  background: white;
 
-  max-width:700px;
+  width: 250px;
 
-  margin:auto;
+  padding: 20px;
 
-  margin-bottom:35px;
+  border-radius: 15px;
 
-}
+  text-align: center;
 
-.botao{
-
-  display:inline-block;
-
-  background:#FFD700;
-
-  color:#000;
-
-  padding:15px 35px;
-
-  border-radius:8px;
-
-  text-decoration:none;
-
-  font-weight:bold;
-
-  transition:0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 
 }
 
-.botao:hover{
+.card img {
 
-  background:white;
+  width: 100%;
 
-}                                .ebooks{
+  height: 350px;
 
-  padding:70px 20px;
+  object-fit: cover;
 
-  text-align:center;
+  border-radius: 12px;
 
-}
-
-.ebooks h2{
-
-  font-size:40px;
-
-  margin-bottom:40px;
+  box-shadow: 0 5px 15px #0003;
 
 }
 
-.cards{
+.card button {
 
-  display:flex;
+  background: #16a34a;
 
-  justify-content:center;
+  color: white;
 
-  flex-wrap:wrap;
+  border: none;
 
-  gap:30px;
+  padding: 12px 20px;
 
-}
+  border-radius: 10px;
 
-.card{
+  cursor: pointer;
 
-  width:300px;
-
-  background:white;
-
-  border-radius:15px;
-
-  padding:25px;
-
-  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  font-size: 16px;
 
 }
 
-.card h3{
+.card button:hover {
 
-  margin-bottom:15px;
+  background: #15803d;
 
-}
+}                                        .pedido {
 
-.card p{
+  display: none;
 
-  margin-bottom:20px;
+  background: white;
 
-}
+  margin-top: 30px;
 
-.card span{
+  padding: 25px;
 
-  display:block;
+  border-radius: 15px;
 
-  font-size:24px;
+  text-align: center;
 
-  font-weight:bold;
-
-  color:#0d1b2a;
-
-  margin-bottom:20px;
+  box-shadow: 0 5px 15px #0002;
 
 }
 
-.card button{
+.pedido button {
 
-  width:100%;
+  display: block;
 
-  padding:15px;
+  width: 80%;
 
-  background:#0d1b2a;
+  margin: 10px auto;
 
-  color:white;
+  padding: 15px;
 
-  border:none;
+  border: none;
 
-  border-radius:8px;
+  border-radius: 10px;
 
-  cursor:pointer;
+  font-size: 18px;
 
-  font-size:18px;
+  cursor: pointer;
+
+  background: #2563eb;
+
+  color: white;
+
+}
+header button {
+
+  background: #16a34a;
+
+  color: white;
+
+  border: none;
+
+  padding: 15px 30px;
+
+  border-radius: 12px;
+
+  font-size: 18px;
+
+  cursor: pointer;
 
 }
 
-.card button:hover{
+header button:hover {
 
-  background:#FFD700;
+  transform: scale(1.05);
 
-  color:black;
+}
+.card h2 {
 
-} 
+  min-height: 60px;
+
+}
+
+.card p {
+
+  min-height: 50px;
+
+}
+.avaliacoes {
+
+  margin-top: 50px;
+
+  text-align: center;
+
+}
+
+.card-avaliacao {
+
+  background: white;
+
+  margin: 20px auto;
+
+  max-width: 700px;
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+}
+.enviar-avaliacao {
+
+  background: white;
+
+  margin-top: 40px;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+.enviar-avaliacao input,
+
+.enviar-avaliacao select,
+
+.enviar-avaliacao textarea {
+
+  width: 90%;
+
+  max-width: 500px;
+
+  padding: 12px;
+
+  margin: 10px 0;
+
+  border-radius: 10px;
+
+  border: 1px solid #ccc;
+
+}
+
+.enviar-avaliacao textarea {
+
+  height: 120px;
+
+}
+
+.enviar-avaliacao button {
+
+  background: #16a34a;
+
+  color: white;
+
+  border: none;
+
+  padding: 14px 25px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+}

@@ -8,81 +8,174 @@
   </head>
 
   <body>
-    <header class="menu">
+    <div class="container">
 
-  <div class="logo">Prime Digital</div>
+  <header>
 
-  <nav>
+    <h1>📚 Ebook Store</h1>
 
-    <a href="#">Início</a>
+    <p>Escolha seu e-book favorito.</p>
+ <h2>Transforme seu conhecimento em resultados com nossos e-books!</h2>
 
-    <a href="#">E-books</a>
+<button>Ver e-books</button>
+  </header>
 
-    <a href="#">Categorias</a>
+  <section class="ebooks">
 
-    <a href="#">Sobre</a>
+    <div class="card">
+      <img src="https://i.postimg.cc/RZssxyjN/Energetic-Soccer-E-Book-Cover-with-Action-Shot.png"alt="Como Virar um Jogador de Futebol Profissional">
+      
+      <h2>Como Virar um Jogador de Futebol Profissional</h2>
 
-    <a href="#">Contato</a>
+      <p>Aprenda o caminho para tentar se tornar um jogador profissional.</p>
+ <h3>R$ 9,90</h3>
+      <button onclick="abrirPedido('Como Virar um Jogador de Futebol Profissional')">
 
-  </nav>
+Peça seu e-book
 
-</header                           <section class="banner">
+</button>
 
-  <div class="banner-texto">
+    </div>
 
-    <h1>Aprenda. Evolua. Conquiste.</h1>
+    <div class="card">
 
-    <p>
+      <img src="https://i.postimg.cc/fWfvh1dJ/IMG-0729.jpg"alt="Receitas de Doces">
 
-      Os melhores e-books digitais para estudos,
+      <h2>Receitas de Doces</h2>
 
-      empreendedorismo e desenvolvimento pessoal.
+      <p>Receitas deliciosas para fazer ou vender.</p>
+ <h3>R$ 7,90</h3>
+      <button onclick="abrirPedido('Receitas de Doces')">
 
-    </p>
+Peça seu e-book
 
-    <a href="#" class="botao">Comprar Agora</a>
+</button>
+
+    </div>
+
+    <div class="card">
+
+        <img src="https://i.postimg.cc/wjCNNkNk/Modern-E-Book-Cover-with-Smartphone-and-Gradient.png" alt="Como Faço Meus E-books">
+
+  <h2>Como Faço Meus E-books</h2>
+
+  <p>Aprenda como criar seus próprios e-books.</p>                                <h3>R$ 12,90</h3>
+  <button onclick="abrirPedido('Como Faço Meus E-books')">
+
+  peça seu e-book
+    
+  </button>
+
+    </div>
+    
+    <div class="card">
+
+  <img src="https://i.postimg.cc/pLFhPnSC/Design-sem-nome.png"" alt="11 Truques do iPhone que Quase Ninguém Sabe">
+
+  <h2>11 Truques do iPhone que Quase Ninguém Sabe</h2>
+
+  <p>Descubra funções escondidas e dicas para aproveitar muito mais o seu iPhone.</p>
+
+  <h3>R$ 8,90</h3>
+
+  <button onclick="abrirPedido('11 Truques do iPhone que Quase Ninguém Sabe')">
+
+    Peça seu e-book
+
+  </button>
+
+    </div>
+        
+<div id="pedido" class="pedido">
+  <h2>Escolha onde pedir</h2>
+<h3 id="nomeEbook"></h3>
+  <button onclick="instagram()">📸 Instagram</button>
+
+<button onclick="whatsapp()">💬 WhatsApp</button>
+
+<button onclick="tiktok()">🎵 TikTok</button>                    
+</div>
+  
+<section class="beneficios">
+
+  <div>
+
+    <h3>📚 E-books em PDF</h3>
+    <p>Conteúdos práticos para você aprender.</p>
+  </div>
+
+  <div>
+    <h3>⚡ Receba rápido</h3>
+    <p>Após o pedido, receba seu e-book.</p>
+  </div>
+
+  <div>
+    <h3>🔒 Compra segura</h3>
+    <p>Faça seu pedido pelos nossos canais.</p>
+  </div> 
+
+  <h2>⭐ O que nossos clientes dizem</h2>
+
+  <div class="card-avaliacao">
+
+    <h3>⭐⭐⭐⭐⭐</h3>
+
+    <p>"O e-book de doces é incrível! Receitas fáceis e deliciosas."</p>
+
+    <strong>- Maria S.</strong>
 
   </div>
 
-</section>                         <section class="ebooks">
+  <div class="card-avaliacao">
 
-  <h2>Nossos E-books</h2>
+    <h3>⭐⭐⭐⭐⭐</h3>
 
-  <div class="cards">
+    <p>"Aprendi várias dicas que não conhecia sobre o iPhone."</p>
 
-    <div class="card">
+    <strong>- João P.</strong>
 
-      <h3>Empreendedorismo</h3>
+  </div>
 
-      <p>Aprenda como começar seu negócio.</p>
+  <div class="card-avaliacao">
 
-      <span>R$ 19,90</span>
+    <h3>⭐⭐⭐⭐⭐</h3>
 
-      <button>Comprar</button>
+    <p>"Muito bom! O e-book sobre futebol me ajudou a entender melhor o caminho para evoluir."</p>
 
-    </div>
+    <strong>- Lucas R.</strong>
 
-    <div class="card">
+  </div>
 
-      <h3>Estudos Inteligentes</h3>
+</section>
+<section class="enviar-avaliacao">
 
-      <p>Aprenda mais em menos tempo.</p>
+  <h2>⭐ Deixe sua avaliação</h2>
 
-      <span>R$ 14,90</span>
+  <input type="text" id="nomeCliente" placeholder="Seu nome">
 
-      <button>Comprar</button>
+  <select id="estrelas">
 
-    </div>
+    <option>⭐⭐⭐⭐⭐</option>
 
-    <div class="card">
+    <option>⭐⭐⭐⭐</option>
 
-      <h3>Finanças Pessoais</h3>
+    <option>⭐⭐⭐</option>
 
-      <p>Organize seu dinheiro de forma simples.</p>
+    <option>⭐⭐</option>
 
-      <span>R$ 24,90</span>
+    <option>⭐</option>
 
-      <button>Comprar</button> 
+  </select>
+
+  <textarea id="comentario" placeholder="Escreva sua avaliação"></textarea>
+
+  <button onclick="enviarAvaliacao()">
+
+    Enviar avaliação
+
+  </button>
+
+</section>
     <script src="/script.js"></script>
   </body>
 
